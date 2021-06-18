@@ -1,20 +1,106 @@
 .container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 20px;
-  width: 80px;
-  width: 50%;
+  padding: 20px;
+  margin: auto;
+  float: initial;
+  width: 40%;
+  /* padding: 10px; */
+  /* border-style: solid; */
 }
 .search {
+  width: 100%;
+  height: 35px;
+  border-radius: 30px;
   background-image: url("./components/microphone.png");
   background-position: right;
   background-size: 20px;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 500px;
-  border-radius: 20px;
+  border-width: 1px;
+}
+.search:hover {
+  /* background-color: lightgray; */
+  box-shadow: 2px 3px 2px 1px #ccc;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
-  text-decoration: black;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 5px;
+  color: lightgrey;
+}
+.btn:hover {
+  border-color: blue;
+}
+.language {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: row;
+  bottom: 0px;
+  position: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+.footer .flex-footer-left {
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .flex-footer-right {
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+a {
+  color: grey;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+.btn-text {
+  color: black;
+  font-size: 15px;
 }
